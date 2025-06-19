@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>간단 소개</title>
+    <meta charset="UTF-8">
+    <title>닥발 갱</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>닥부리</h1>
-  <p>이것은 첫 번째 단락입니다.</p>
-  
-  <img src="https://yonebot.xyz/images/yone_kdl.png" alt="요네 봇 배너">
-  <a href="http://yonebot.xyz/">링크</a>
+    <div id="game-container">
+        <canvas id="pong" width="800" height="500"></canvas>
+        <div id="scoreboard">
+            <span id="score-left">0</span> : <span id="score-right">0</span>
+        </div>
+    </div>
+    <script src="game.js"></script>
 </body>
 </html>
